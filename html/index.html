@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>pokedex</title>
+</head>
+<body>
+    <div class="container">
+        <div class="detail-container"></div>
+        <div class="detail-container detail-container-1"></div>
+        <div class="detail-container detail-container-2"></div>
+        <div class="pokedex-header-1">
+            <div class="big-circle-header">
+                <div class="big-circle-center"></div>
+            </div>
+            <div class="small-circle-header"></div>
+            <div class="small-circle-header small-circle-header-1"></div>
+            <div class="small-circle-header small-circle-header-2"></div>
+        </div>
+        <div class="pokedex-header-2"></div>
+        <div class="container-bg-1"></div>
+        <div class="container-bg-2"></div>
+
+        <div class="pokedex-body-left-1"></div>
+        <div class="pokedex-body-left-2">
+            <div class="pokedex-container-screen-1">
+                <div class="pokedex-screen">
+                    <div class="screen" id="pokedex-screen-left">
+                        <img id="screenImagePokemon" src="" alt="">
+                    </div>
+                    <div class="screen-pokemon-data" id="screen-pokemon-data">
+                        <li class="data-list">
+                            <ul>
+                                <h4>Typer</h4>
+                                <p id="type"></p>
+                            </ul>
+                            <ul>
+                                <h4>Abilities</h4>
+                                <p id="abilities"></p>
+                            </ul>
+                            <ul>
+                                <h4>Weakness</h4>
+                                <p id="weakness"></p>
+                            </ul>
+                            <ul>
+                                <h4>Base Exp</h4>
+                                <p id="base-exp"></p>
+                            </ul>
+                            <ul>
+                                <h4>Weight</h4>
+                                <p id="weight"></p>
+                            </ul>
+                            <ul>
+                                <h4>Height</h4>
+                                <p id="height"></p>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="pokedex-container-screen-2">
+                <div class="pokedex-screen"></div>
+            </div>
+            <div class="pokedex-container-screen-3">
+                <div class="pokedex-screen"></div>
+            </div>
+
+            <div class="pokedex-console-button-stick" onclick="addListStatusPokemon()"></div>
+            <div class="pokedex-console-button-arrow-up-down"></div>
+            <div class="pokedex-console-button-arrow-left-right">
+                <button class="pokedex-button-arrow-left" onclick="decreaseNumber()">L</button>
+                <button class="pokedex-button-arrow-right" onclick="increaseNumber()">R</button>
+            </div>
+            <div class="pokedex-console-chart"></div>
+        </div>
+        
+        <div class="pokedex-body-center">
+            <div class="pokedex-body-center-1"></div>
+            <div class="pokedex-body-center-2"></div>
+        </div>
+
+        <div class="pokedex-body-right">
+            <div class="pokedex-body-right-1">
+                <div class="pokedex-outline-body-right-detail"></div>
+                <div class="pokedex-outline-body-right-detail pokedex-outline-body-right-detail-1"></div>
+
+            </div>
+            <div class="pokedex-body-right-2"></div>
+            <div class="pokedex-body-right-3"></div>
+            <div class="pokedex-outline-body-right">
+                <div class="pokedex-outline-body-right pokedex-outline-body-right-2"></div>
+                <div class="pokedex-screen-right">
+                    <h1 id="namePokemon" class="namePokemon"></h1>
+                </div>
+                <div class="panel-grid-left-detail">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="buttons-details-body-right-1">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="buttons-details-body-right-2"></div>
+                <div class="panel-left-detail"></div>
+                <div class="panel-left-detail panel-left-detail-2"></div>
+            </div>
+        </div>
+        
+
+    </div>
+    <script src="../js/index.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
